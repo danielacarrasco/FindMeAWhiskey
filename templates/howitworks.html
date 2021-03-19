@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: DimGrey;
+  color: white;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/" class="w3-bar-item w3-button">Find me a Whiskey</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="/how-it-works" class="w3-bar-item w3-button">How It Works</a>
+      <a href="/contact" class="w3-bar-item w3-button">About Me</a>
+      <a href="/es" class="w3-bar-item w3-button">Es</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="static/images/banner-connect.png" alt="Whiskey Banner" width="1600" height="200">
+</header>
+
+
+  <hr>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+<h1 class="w3-center">How It Works</h1>
+      <p class="w3-large w3-text w3-hide-medium">"Find Me a Whiskey" 
+      uses a dataset with reviews of over 2,000 whiskeys. The code 
+      uses natural language processing (NLP) to extract the flavours.</p>
+      <p class="w3-large w3-text w3-hide-medium">We use the most common 
+      flavours and tag the whiskeys with them based on their description.</p>
+      <p class="w3-large w3-text w3-hide-medium">As whiskeys can be described 
+      with so many different flavours, we use a word association technique to 
+      find synonyms, using Word2Vec.</p>
+      
+      
+      <p class="w3-large w3-text w3-hide-medium"><h4><b>Word2Vec</b></h4></p>
+      <p class="w3-large w3-text w3-hide-medium">Word2vec is a technique for NLP. 
+      It uses a neural network model to learn word associations from a large corpus of text. 
+      Once trained, such a model can detect synonymous words.</p>
+      <p class="w3-large w3-text w3-hide-medium">After training with our 
+      descriptions plus reviews scraped from other websites, we have our synonyms </p>
+      <p class="w3-large w3-text w3-hide-medium">For example, one of our 
+      flavours is the word <i>peat</i>. Our code finds the following synonyms</p>
+
+
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-small">
+     <table id="customers">
+            <tr>
+            <th>SYNONYM</th>
+            <th>SIMILARITY</th>
+            </tr>
+            <tr>
+            <td>coal</td>
+            <td>0.8428742289543152</td>
+            </tr>
+            <tr>
+            <td>kiln</td>
+            <td>0.8387118577957153</td>
+            </tr>
+            <tr>
+            <td>tar</td>
+            <td>0.8292853832244873</td>
+            </tr>
+            <tr>
+            <td>medicinal</td>
+            <td>0.8183512687683105</td>
+            </tr>
+            <tr>
+            <td>ashy</td>
+            <td>0.8134244680404663</td>
+            </tr>
+            <tr>
+            <td>peaty</td>
+            <td>0.811352014541626</td>
+            </tr>
+            <tr>
+            <td>earthy</td>
+            <td>0.8033401966094971</td>
+            </tr>
+            <tr>
+            <td>bonfire</td>
+            <td>0.8028565049171448</td>
+            </tr>
+            <tr>
+            <td>seaweed</td>
+            <td>0.782123327255249</td>
+            </tr>
+            <tr>
+            <td>damp</td>
+            <td>0.7778213620185852</td>
+            </tr>
+        </table> 
+
+    </div>
+    <div class="w3-col l2 w3-padding-small">
+    <br><br><br><br><br><br><br><br>
+    <img class="w3-image" src="static/images/arrow.png" alt="arrow" width="150" height="100">
+    </div>
+    <div class="w3-col l3 w3-padding-small">
+         <table id="customers">
+         <tr>
+            <th>SYNONYMS</th>
+            </tr>
+     <tr>
+        <td>coal</td>
+        </tr>
+        <tr>
+        <td>kiln</td>
+        </tr>
+        <tr>
+        <td>tar</td>
+        </tr>
+        <tr>
+        <td>medicinal</td>
+        </tr>
+        <tr>
+        <td>ashy</td>
+        </tr>
+        <tr>
+        <td>peaty</td>
+        </tr>
+        <tr>
+        <td>earthy</td>
+        </tr>
+        <tr>
+        <td>bonfire</td>
+    </tr>
+    </table>
+
+    </div>
+
+
+</div>
+
+<p class="w3-large w3-text w3-hide-medium">After the tagging process, we 
+look at the frequency of flavours for top 25 flavours. </p>
+<img class="w3-image" src="static/images/WordFreq.png" alt="flav_freq" width="900" height="700">
+
+
+<p class="w3-large w3-text w3-hide-medium">We also look at the correlation 
+between the tags in the heatmap below. </p>
+<img class="w3-image" src="static/images/heatmap.png" alt="corr" width="1200" height="1200">
+
+
+
+<p class="w3-large w3-text w3-hide-medium"><h4><b>GitHub</b></h4></p>
+
+<p class="w3-large w3-text w3-hide-medium">The code is available in Github <a href="https://github.com/danielacarrasco/FindMeAWhiskey">here</a>.
+
+<p class="w3-large w3-text w3-hide-medium"><h4><b></b></h4></p>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Created by Daniela Carrasco-Nunez</p>
+</footer>
+
+</body>
+</html>

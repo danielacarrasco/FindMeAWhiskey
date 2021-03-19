@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: DimGrey;
+  color: white;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/es" class="w3-bar-item w3-button">Encuéntrame un Whiskey</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/es" class="w3-bar-item w3-button">Inicio</a>
+      <a href="/como-funciona" class="w3-bar-item w3-button">Cómo Funciona</a>
+      <a href="/contacto" class="w3-bar-item w3-button">Sobre Mí</a>
+      <a href="/" class="w3-bar-item w3-button">En</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="static/images/banner-connect.png" alt="Whiskey Banner" width="1600" height="200">
+</header>
+
+
+  <hr>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+<h1 class="w3-center">Cómo Funciona</h1>
+      <p class="w3-large w3-text w3-hide-medium">"Encuéntrame Un Whiskey" 
+      usa una base de datos de más de 2.000 whiskeys. El código usa 
+      Natural Language Processing (NLP) para extraer los sabores.</p>
+      <p class="w3-large w3-text w3-hide-medium">Usamos los sabores más 
+      comunes y etiquetamos al whiskey con ellos basado en la descripción</p>
+      <p class="w3-large w3-text w3-hide-medium">Como los whiskeys pueden ser 
+      descritos de tantas maneras, usamos una técnica de asociación de 
+      palabras para encontrar sinónimos. Esta técnica es Word2Vec</p>
+      
+      
+      <p class="w3-large w3-text w3-hide-medium"><h4><b>Word2Vec</b></h4></p>
+      <p class="w3-large w3-text w3-hide-medium">Word2Vec es una técnica de 
+      NLP. Usa un modelo de neural network para aprender la asociación de 
+      palabras de un cuerpo te texto. Una vez entrenado, este modelo puede 
+      detectar sinónimos.</p>
+      <p class="w3-large w3-text w3-hide-medium">ADespués de entrenar nuestro 
+      modelo con las descripciones y otras opiniones de whiskeys que fueron 
+      extraídas de páginas web, tenemos nuestros sinónimos.</p>
+      <p class="w3-large w3-text w3-hide-medium">Por ejemplo, una de nuestras 
+      etiquetas de sabor es la palabra <i>turba</i>, para la que el código encuentra:</p>
+
+
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-small">
+     <table id="customers">
+            <tr>
+            <th>SINÓNIMO</th>
+            <th>SIMILARIDAD</th>
+            </tr>
+            <tr>
+            <td>carbón</td>
+            <td>0.8428742289543152</td>
+            </tr>
+            <tr>
+            <td>horno</td>
+            <td>0.8387118577957153</td>
+            </tr>
+            <tr>
+            <td>alquitrán</td>
+            <td>0.8292853832244873</td>
+            </tr>
+            <tr>
+            <td>medicinal</td>
+            <td>0.8183512687683105</td>
+            </tr>
+            <tr>
+            <td>acenizas</td>
+            <td>0.8134244680404663</td>
+            </tr>
+            <tr>
+            <td>turbado</td>
+            <td>0.811352014541626</td>
+            </tr>
+            <tr>
+            <td>terroso</td>
+            <td>0.8033401966094971</td>
+            </tr>
+            <tr>
+            <td>hoguera</td>
+            <td>0.8028565049171448</td>
+            </tr>
+            <tr>
+            <td>alga</td>
+            <td>0.782123327255249</td>
+            </tr>
+            <tr>
+            <td>húmedo</td>
+            <td>0.7778213620185852</td>
+            </tr>
+        </table> 
+
+    </div>
+    <div class="w3-col l2 w3-padding-small">
+    <br><br><br><br><br><br><br><br>
+    <img class="w3-image" src="static/images/arrow.png" alt="arrow" width="150" height="100">
+    </div>
+    <div class="w3-col l3 w3-padding-small">
+         <table id="customers">
+         <tr>
+            <th>SINÓNIMOS</th>
+            </tr>
+     <tr>
+        <td>carbón</td>
+        </tr>
+        <tr>
+        <td>horno</td>
+        </tr>
+        <tr>
+        <td>alquitrán</td>
+        </tr>
+        <tr>
+        <td>medicinal</td>
+        </tr>
+        <tr>
+        <td>ceniza</td>
+        </tr>
+        <tr>
+        <td>turbado</td>
+        </tr>
+        <tr>
+        <td>terroso</td>
+        </tr>
+        <tr>
+        <td>hoguera</td>
+    </tr>
+    </table>
+
+    </div>
+
+
+</div>
+
+<p class="w3-large w3-text w3-hide-medium">Después del proceso de etiquetar, 
+miramos la frecuencia de los 25 sabores más comunes. </p>
+<img class="w3-image" src="static/images/WordFreq.png" alt="flav_freq" width="900" height="700">
+
+
+<p class="w3-large w3-text w3-hide-medium">También miramos la correlación 
+entre estos sabores en la figura de abajo. </p>
+<img class="w3-image" src="static/images/heatmap.png" alt="corr" width="1200" height="1200">
+
+
+
+<p class="w3-large w3-text w3-hide-medium"><h4><b>GitHub</b></h4></p>
+
+<p class="w3-large w3-text w3-hide-medium">El código está disponible e Github <a href="https://github.com/danielacarrasco/FindMeAWhiskey">here</a>.
+
+<p class="w3-large w3-text w3-hide-medium"><h4><b></b></h4></p>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Creado por Daniela Carrasco-Núñez</p>
+</footer>
+
+</body>
+</html>
