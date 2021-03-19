@@ -15,7 +15,7 @@ import seaborn as sns; sns.set()
 
 
 
-df = pd.read_csv('/Data/Reviews_Tags.csv')
+df = pd.read_csv('Data/Reviews_Tags.csv')
 
 sample_data = df[['name', 'price', 'review.point', 'category', 'tags']].reset_index(drop=True)            
 
